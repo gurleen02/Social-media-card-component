@@ -1,0 +1,202 @@
+
+<!-- 
+
+dark : #1e1e1e-
+extra dark : #121212;
+accent : #bb86fc;
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  /* GLOBALS */
+  
+  *{
+  	padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+  }
+  
+  html{
+  	font-size: 62.5%;
+  }
+  
+  body{
+  	font-size: 1.6rem;
+    box-sizing: border-box;
+    font-family: monospace;
+    text-align: center;
+
+  }
+  
+ /* Container styles*/
+  
+  .card{
+  	
+    position:relative;
+    width:400px;
+    margin:5rem;
+    
+    color: white;
+    background-color:#1e1e1e;
+    border-radius:8px;
+    box-shadow: 10px 7px 20px rgba(0, 0,0, .7);
+    
+    overflow: hidden;
+  }
+  
+  .card__upper{
+  	 padding: 5rem;
+  }
+  
+  .card__lower{
+    padding: 2rem;
+
+    background: #121212;
+  }
+  
+  
+  /* COmponent styles */
+  
+  .card__btn{
+  	padding: 0.8em 1.8em;
+    cursor: pointer;
+    color: #1e1e1e;
+    border-radius: 4px;
+    border: 1px solid #bb86fc;
+    transition: color .3s ease-in-out;
+    transition-property: color, background-color;
+  }
+  
+  .card__btn:hover{
+  	color: #bb86fc;
+		background: #1e1e1e;
+    
+  }
+  
+  .card__btn + .card__btn{
+  	margin-left: 1rem;
+  }
+  
+  .card__message{
+  	background:#bb86fc;
+  }
+   .card__follow{
+  	background:transparent;
+     color: #bb86fc;
+  }
+  
+  
+  
+  .card__pro{
+  	background-color: #bb86fc;
+    padding:4px 7px;
+    border-radius:4px;
+    color:#1e1e1e;
+    position:absolute;
+    top:3rem;
+    left:3rem;
+  }
+   
+  .card__profile-photo{
+  	border-radius:50%;
+    padding:8px;
+    border: 1px solid #bb86fc; 
+  }
+  
+  .card__details *{
+  	margin-top:1.8rem;
+  	margin-bottom:1.8rem;
+  }
+  
+  .card__city{
+  	text-transform:uppercase;
+  }
+  
+  .card__job-title{
+  	line-height:1.4em;
+    font-size:1.7rem;
+  }
+  
+  .card__follow{
+  	color: #bb86fc;
+    background: #1e1e1e;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .card__follow:hover{
+		transform: scale(90%);
+  }
+  
+  .card__skills{
+  	font-size: 1.2rem;
+    list-style: none;
+ 		display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .card__skill {
+  	margin: 0.4rem;
+  	border: 1px solid #fff;
+    opacity: 0.5;
+    padding: 0.5rem;
+    border-radius: 4px;
+    margin-right: 5px;
+  }
+  
+  .card__skills__title{
+  	opacity: 0.6;
+    padding: 0 0.5rem;
+    margin-bottom: 1rem;
+  	text-transform:uppercase;
+    text-align:left;
+  }
+  
+
+  
+</style>
+<body>
+   <div class="card">
+     <div class="card__upper">
+      <span class="card__pro">
+          PRO
+      </span>
+      <img class="card__profile-photo" src="https://picsum.photos/id/1027/100/100" alt="" >
+       
+      <div class="card__details">
+        <h3 class="card__name">Gurleen Kaur</h3>
+        <h5 class="card__city">Chandigarh</h5>
+        <p class="card__job-title" >User Interface designer and frontend developer</p>
+         </div>
+        <button class="card__message card__btn">
+           Message
+        </button>
+        <button class="card__follow card__btn">
+           Following
+        </button>
+     </div>
+    
+    <div class="card__lower">
+        <h5 class="card__skills__title">Skills</h5>
+        <ul class="card__skills">
+            <li class="card__skill">UI/UX</li>
+            <li class="card__skill">Front end Development</li>
+            <li class="card__skill">HTML</li>
+            <li class="card__skill">JavaScript</li>
+            <li class="card__skill">Python</li>
+            <li class="card__skill">CSS</li>
+            <li class="card__skill">Bootstrap</li>
+            
+        </ul>
+    </div>
+   </div> 
+</body>
+</html>
